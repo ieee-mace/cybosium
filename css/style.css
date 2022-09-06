@@ -519,6 +519,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
+#intro h1 span span{
+  font-size: 67px;
+}
+
 #intro h1 span {
   color: #f82249;
 }
@@ -658,7 +662,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("../img/images/robot-infinity.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -668,7 +672,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(13, 20, 41, 0.9);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1162,7 +1166,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #subscribe {
   padding: 60px;
-  background: url(../img/subscribe-bg.jpg) center center no-repeat;
+  background: url(../img/images/robot-city.jpg) center center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -1170,7 +1174,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #subscribe:before {
   content: "";
-  background: rgba(6, 12, 34, 0.6);
+  background: rgba(6, 12, 34, 0.9);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1615,6 +1619,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #intro h1 {
     font-size: 34px;
+  }
+
+  #intro h1 span span{
+    font-size: 43px;
   }
 
   #intro p {
