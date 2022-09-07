@@ -677,17 +677,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 # About Section
 --------------------------------------------------------------*/
 
-#about.about-cybosium {
-  background: url("../img/images/robot-infinity.jpg");
-  background-size: cover;
+#about {
+  /* background: url("../img/images/robot-infinity.jpg");
+  background-size: cover; */
   overflow: hidden;
   position: relative;
   color: #fff;
   padding: 60px 0 40px 0;
   background-attachment: fixed;
+  color: #0e1b4d;
 }
 
-#about.about-cybosium:before {
+/* #about:before {
   content: "";
   background: rgba(13, 20, 41, 0.9);
   position: absolute;
@@ -695,27 +696,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 0;
   left: 0;
   right: 0;
-}
+} */
 
-#about.about-cybosium h2 {
+#about h2 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #fff;
+  /* color: #fff; */
 }
 
-#about.about-cybosium h3 {
+#about h3 {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: #fff;
+  /* color: #fff; */
 }
 
-#about.about-cybosium p {
+#about p {
   font-size: 14px;
   margin-bottom: 20px;
-  color: #fff;
+  /* color: #fff; */
 }
 
 
@@ -1732,4 +1733,50 @@ body.mobile-nav-active #mobile-nav-toggle {
   #subscribe button {
     margin-top: 10px;
   }
+}
+
+
+#about.about .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr) repeat(2, 1fr);
+    /* grid-template-rows: 1.5fr repeat(2, 0.5fr); */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-auto-rows: min-content;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 3; }
+    .div2 { grid-area: 1 / 3 / 2 / 5; }
+    .div3 { grid-area: 2 / 1 / 4 / 2; }
+    .div4 { grid-area: 2 / 2 / 4 / 3; }
+    .div5 { grid-area: 2 / 3 / 4 / 5; }
+
+#about.about .div1,
+#about.about .div2,
+#about.about .div3,
+#about.about .div4,
+#about.about .div5 {
+  z-index: 100;
+  /* background-color: #2f3138; */
+  padding: 25px;
+  /* border: none; */
+  /* border-radius: 5px; */
+  transition: all  0.3s ease-in-out;
+  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+}
+
+@media (max-width: 774px) {
+  #about.about .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 2 / 1 / 3 / 2; }
+  .div3 { grid-area: 3 / 1 / 4 / 2; }
+  .div4 { grid-area: 4 / 1 / 5 / 2; }
+  .div5 { grid-area: 5 / 1 / 6 / 2; }
 }
