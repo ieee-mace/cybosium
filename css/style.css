@@ -677,16 +677,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 # About Section
 --------------------------------------------------------------*/
 
-#about {
+#about.about-cybosium {
   background: url("../img/images/robot-infinity.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
   padding: 60px 0 40px 0;
+  background-attachment: fixed;
 }
 
-#about:before {
+#about.about-cybosium:before {
   content: "";
   background: rgba(13, 20, 41, 0.9);
   position: absolute;
@@ -696,14 +697,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
 }
 
-#about h2 {
+#about.about-cybosium h2 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #fff;
 }
 
-#about h3 {
+#about.about-cybosium h3 {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
@@ -711,7 +712,52 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#about p {
+#about.about-cybosium p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+
+
+
+#about.about-ieee {
+  background: url("../img/images/robot-city.jpg");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 60px 0 40px 0;
+  background-attachment: fixed;
+}
+
+#about.about-ieee:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.9);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#about.about-ieee h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about.about-ieee h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about.about-ieee p {
   font-size: 14px;
   margin-bottom: 20px;
   color: #fff;
