@@ -188,24 +188,24 @@ E-Mail ID: roshanrjv.27@gmail.com -->
 
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script>
-    // const validate = new window.JustValidate('#robot-form');
-    // validate
-        // .addField("#robot-name", [
-        //     {
-        //         rule: "required",
-        //         errorMessage: "Name is required"
-        //     }
-        // ])
-        // .addField("#robot-email", [
-        //     {
-        //         rule: "required",
-        //         errorMessage: "Email is required"
-        //     },
-        //     {
-        //         rule: "email",
-        //         errorMessage: "Email is not valid"
-        //     }
-        // ]);
+    const validate = new window.JustValidate('#robot-form');
+    validate
+        .addField("#robot-name", [
+            {
+                rule: "required",
+                errorMessage: "Name is required"
+            }
+        ])
+        .addField("#robot-email", [
+            {
+                rule: "required",
+                errorMessage: "Email is required"
+            },
+            {
+                rule: "email",
+                errorMessage: "Email is not valid"
+            }
+        ]);
   </script>
 
 </body>
